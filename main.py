@@ -277,7 +277,7 @@ async def download_all_videos(tapo, output_dir):
                 eta = "unknown"
 
             print(
-                f"\n📈 Progress: {successful}✅ {skipped}⏭️ {failed}❌ | Remaining: {remaining} | ETA: {eta}")
+                f"\n📈 Progress: ✅{successful} | ⏭️{skipped} | ❌{failed} | Remaining: {remaining} | ETA: {eta}")
 
     # Final statistics
     total_time = datetime.now() - start_time
