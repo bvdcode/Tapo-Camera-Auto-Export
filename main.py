@@ -83,11 +83,6 @@ async def download_recording(tapo, recording, base_output_dir, time_correction, 
     filename = format_filename(start_time)
     filepath = os.path.join(output_dir, filename)
 
-    # Debug output
-    print(f"DEBUG: start_time={start_time}, date_folder={date_folder}")
-    print(f"DEBUG: output_dir={output_dir}")
-    print(f"DEBUG: filepath={filepath}")
-
     # Check if file already exists
     if os.path.exists(filepath):
         file_size = os.path.getsize(filepath)
